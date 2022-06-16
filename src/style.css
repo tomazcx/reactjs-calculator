@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top right, rgb(89, 0, 255), rgb(0, 102, 255));
+}
+
+#root {
+    @apply h-screen w-screen flex flex-col items-center justify-center;
+}
+
+.visor {
+    @apply flex justify-end px-8
+}
+
+.btn {
+    @apply bg-blue-300 py-4 flex justify-center cursor-pointer;
+    transition: background .25s ease;
+}
+
+.btn:hover {
+    @apply bg-blue-500;
+}
